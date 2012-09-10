@@ -1,0 +1,73 @@
+project Adagio is
+
+   for Languages use ("Ada");
+   for Object_Dir use "obj_debug";
+
+   for Main use ("main.adb");
+   type Build_Type is ("Devel", "Release");
+
+   Build : Build_Type := external ("Build", "Devel");
+
+   type OS_Type is ("Linux", "Win32");
+   OS : OS_Type := external ("OS", "Linux");
+
+   for Object_Dir use "obj_debug";
+
+   Sources := ("3rdparty/agpl/src", "3rdparty/agpl/3rdparty/xmlada",
+               "3rdparty/agpl/src/agpl-http", "3rdparty/agpl/src/trace_true",
+               "3rdparty/agpl/3rdparty/zlib_ada", "3rdparty/agpl/src/agpl-zlib",
+               "compat",
+               "aenea-crawler",
+               "download", "ed2k", "g2", "gui", "kernel", "library", "misc",
+               "network", "search", "storage", "tasking", "upload",
+               "3rdparty/adacf/src", "3rdparty/aws", "3rdparty/charles",
+               "3rdparty/pragmarc", "3rdparty/zlibc",
+               "3rdparty/aws/include", "3rdparty/aws/soap", "3rdparty/aws/src",
+               "3rdparty/aws/ssl");
+
+   case OS is
+      when "Win32" =>
+         for Source_Dirs use Sources & ("os_win");
+
+      when "Linux" =>
+         for Source_Dirs use Sources & ("os_linux");
+   end case;
+
+   package Compiler is
+      for Default_Switches ("c") use ("-g");
+      for Default_Switches ("c++") use ("-g");
+      for Default_Switches ("ada") use ("-O2", "-gnatf", "-gnato", "-fstack-check", "-g", "-gnata",
+                                        "-gnatwcfjmopruvz", "-gnatVa");
+                                        --  "-gnatyaceikln"); -- Too much style errors, disabled until pretty-printed
+      for Switches ("adagio*")   use Compiler'Default_Switches ("ada") & ("-gnat05");
+      for Switches ("agpl*")     use Compiler'Default_Switches ("ada") & ("-gnat2012");
+      for Switches ("pragmarc*") use Compiler'Default_Switches ("ada") & ("-gnat95");
+
+   end Compiler;
+
+   package Linker is
+      for Default_Switches ("ada") use ("-g");
+   end Linker;
+
+   package Builder is
+
+      for Default_Switches ("ada") use ("-m", "-j2", "-g", "-gnatQ");
+      for Executable ("main.adb") use "adagio";
+
+   end Builder;
+
+   package Binder is
+
+      for Default_Switches ("ada") use ("-E", "-static");
+
+   end Binder;
+
+
+   package Pretty_Printer is
+
+      for Default_Switches ("ada") use ("-c4", "-A1", "-A2", "-A3", "-A4");
+
+   end Pretty_Printer;
+
+end Adagio;
+

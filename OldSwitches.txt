@@ -1,0 +1,3 @@
+GnatMake:	-s -m -g -gnatQ
+Ada:		-gnato -fstack-check -g -gnata -gnatwbcfopru -gnatVcdfimorst -gnatyM78 -O3 -ffunction-sections
+Binder:		-E -static
