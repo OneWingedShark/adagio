@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 $Id: Changes.txt,v 1.1 2004/03/22 07:14:53 Jano Exp $
 
 --------------
@@ -18,3 +19,25 @@ $Id: Changes.txt,v 1.1 2004/03/22 07:14:53 Jano Exp $
 -- 20040316 --
 --------------
 [*] Starting.
+=======
+$Id: Changes.txt,v 1.1 2004/03/22 07:14:53 Jano Exp $
+
+--------------
+-- Legend ----
+--------------
+[*] Comments
+[+] Additions
+[-] Supressions
+[!] Bug fixes
+[?] Unconfirmed data
+[X] Milestones (version changes)
+
+--------------
+-- 20040318 --
+--------------
+[+] Events + throttle system.
+--------------
+-- 20040316 --
+--------------
+[*] Starting.
+>>>>>>> 32844d73b025baccdb340c164ba5968fb8217a49

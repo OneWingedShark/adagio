@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // Resource file for Win32 version of Aenea.
 
 /////////////////////////////////////////////////////////////////////////////
@@ -6,3 +7,13 @@
 //
 
 0x1C02   ICON    DISCARDABLE     "resource/aenea.ico"
+=======
+// Resource file for Win32 version of Aenea.
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+0x1C02   ICON    DISCARDABLE     "resource/aenea.ico"
+>>>>>>> 32844d73b025baccdb340c164ba5968fb8217a49

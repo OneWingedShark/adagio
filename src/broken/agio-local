@@ -1,2 +1,7 @@
+<<<<<<< HEAD
 adagio -f local-config.xml &
 agiomon -f local-config.xml &
+=======
+adagio -f local-config.xml &
+agiomon -f local-config.xml &
+>>>>>>> 32844d73b025baccdb340c164ba5968fb8217a49

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 	unzOpen                       @61
 	unzClose                      @62
 	unzGetGlobalInfo              @63
@@ -13,3 +14,20 @@
 	unzStringFileNameCompare      @74
 	unzLocateFile                 @75
 	unzGetLocalExtrafield         @76
+=======
+	unzOpen                       @61
+	unzClose                      @62
+	unzGetGlobalInfo              @63
+	unzGetCurrentFileInfo         @64
+	unzGoToFirstFile              @65
+	unzGoToNextFile               @66
+	unzOpenCurrentFile            @67
+	unzReadCurrentFile            @68
+	unztell                       @70
+	unzeof                        @71
+	unzCloseCurrentFile           @72
+	unzGetGlobalComment           @73
+	unzStringFileNameCompare      @74
+	unzLocateFile                 @75
+	unzGetLocalExtrafield         @76
+>>>>>>> 32844d73b025baccdb340c164ba5968fb8217a49

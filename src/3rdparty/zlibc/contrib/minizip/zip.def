@@ -1,5 +1,13 @@
+<<<<<<< HEAD
 	zipOpen                       @80
 	zipOpenNewFileInZip           @81
 	zipWriteInFileInZip           @82
 	zipCloseFileInZip             @83
 	zipClose                      @84
+=======
+	zipOpen                       @80
+	zipOpenNewFileInZip           @81
+	zipWriteInFileInZip           @82
+	zipCloseFileInZip             @83
+	zipClose                      @84
+>>>>>>> 32844d73b025baccdb340c164ba5968fb8217a49

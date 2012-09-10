@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 To build AWS you need to change some settings in the top level makefile.conf
 file.
@@ -7,3 +8,14 @@ Then doing a "make build" should be ok.
 
 Note that you can find more information about the build procedure into AWS
 User's Guide.
+=======
+
+To build AWS you need to change some settings in the top level makefile.conf
+file.
+
+Look for ADASOCKETS, XMLADA and INSTALL make's variables.
+Then doing a "make build" should be ok.
+
+Note that you can find more information about the build procedure into AWS
+User's Guide.
+>>>>>>> 32844d73b025baccdb340c164ba5968fb8217a49

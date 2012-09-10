@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 AWS - Ada Web Server - Authors
 ------------------------------
@@ -11,3 +12,18 @@ AWS is the work of two developers over this period.
 Dmitriy Anisimkov	anisimkov@yahoo.com
 
 Pascal Obry		p.obry@wanadoo.fr
+=======
+
+AWS - Ada Web Server - Authors
+------------------------------
+
+Work on this project has started on January 2000. This project has been
+improving from release to release to become a viable embedded Web server and
+has matured to a complete Web development framework.
+
+AWS is the work of two developers over this period.
+
+Dmitriy Anisimkov	anisimkov@yahoo.com
+
+Pascal Obry		p.obry@wanadoo.fr
+>>>>>>> 32844d73b025baccdb340c164ba5968fb8217a49
